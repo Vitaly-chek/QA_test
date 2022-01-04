@@ -229,7 +229,13 @@ select count(role_name) as kolvo_QA from employees E
 	join employee_salary ES on E.id = ES.employee_id 
 	join salary_1 S on S.id = ES.salary_1_id
 	where role_name like '%iddle%';	
-	
+
+
+select count(role_name) as kolvo_QA from roles_employee RE
+	join roles_1 R on RE.role_id = R.id 
+	join employee_salary es on es.employee_id = RE.employee_id 
+	where role_name like '%iddle%';
+
 -- 27. Вывести количество разработчиков
 	
 select count(role_name) as kolvo_QA from employees E
