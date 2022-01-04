@@ -119,6 +119,10 @@ insert into salary_1(monthly_salary)
 	 	   (2400),
 	  	   (2500);
 
+--добавить значение в столбцы monthly_salary
+insert into salary_1(monthly_salary)
+values(6000);
+	  	  
 -- Создать таблицу employee_salary
 create table employee_salary
 	(
